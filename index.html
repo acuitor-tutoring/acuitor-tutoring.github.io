@@ -148,14 +148,44 @@
 
   <!-- Why Become a Tutor Section -->
   <section class="bg-gray-900 text-white py-16 px-8">
-    <div class="max-w-5xl mx-auto text-center">
-      <h2 class="text-3xl font-bold mb-6">Why Tutor with Acuitor?</h2>
-      <p class="mb-8 max-w-2xl mx-auto">
-        At Acuitor, you’re in control. Set your own pay, choose the subjects you want to teach, and go online whenever you want—no commitments or fixed schedules. Help students instantly and get paid for sharing your expertise on your own terms.
-      </p>
-      <a href="/apply" class="btn-tutor inline-block px-6 py-3 rounded-lg text-lg font-semibold text-white" style="background-color: #44b4fb;">
-        Apply to Be a Tutor
-      </a>
+    <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-10">
+      
+      <!-- Left side: text -->
+      <div class="md:w-1/2 text-center md:text-left">
+        <h2 class="text-3xl font-bold mb-6">Why Tutor with Acuitor?</h2>
+        <p class="mb-8 max-w-xl">
+          At Acuitor, you’re in control. Set your own pay, choose the subjects you want to teach, 
+          and go online whenever you want—no commitments or fixed schedules. 
+          Help students instantly and get paid for sharing your expertise on your own terms.
+        </p>
+        <a href="/apply" class="btn-tutor inline-block px-6 py-3 rounded-lg text-lg font-semibold text-white" style="background-color: #44b4fb;">
+          Apply to Be a Tutor
+        </a>
+      </div>
+
+      <!-- Right side: iPhone video -->
+      <div class="md:w-1/2 flex justify-center">
+        <div class="relative w-[18rem] h-[560px] md:w-[23rem] md:h-[720px]">
+          <!-- iPhone frame -->
+          <img 
+            src="media/iphone.png" 
+            alt="iPhone Frame" 
+            class="absolute top-0 left-0 w-full h-full pointer-events-none select-none"
+          />
+
+          <!-- Video positioned inside the iPhone screen -->
+          <video 
+            class="absolute top-[7%] left-[6%] w-[88%] h-[89%] object-cover rounded-b-[20px] rounded-t-[5px]" 
+            autoplay 
+            muted 
+            loop 
+            playsinline
+          >
+            <source src="media/Acuitor tutor demo.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </div>
     </div>
   </section>
 
