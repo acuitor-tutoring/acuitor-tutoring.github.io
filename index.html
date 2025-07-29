@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Acuitor – Instant Tutoring</title>
 
-  <link rel="icon" href="/img/Acuitor logo.png" type="image/png" />
+  <link rel="icon" href="/media/Acuitor logo.png" type="image/png" />
   
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
@@ -34,34 +34,64 @@
 <body class="bg-gray-900 text-white font-sans">
 
   <!-- Navigation -->
-  <nav class="flex justify-between items-center px-8 py-4">
+  <nav class="flex justify-between items-center px-4 py-3 max-w-6xl mx-auto relative">
     <a href="/" class="flex items-center space-x-2">
-      <img src="img/Acuitor logo.png" alt="App Logo" class="w-8 h-8" />
+      <img src="media/Acuitor logo.png" alt="App Logo" class="w-8 h-8" />
       <span class="text-xl font-semibold">Acuitor</span>
     </a>
-    <div class="space-x-6 text-gray-300 flex items-center">
-      <a href="/apply" class="hover:text-white">Become a Tutor</a>
-      <a href="#" 
-        class="ml-4 px-4 py-2 rounded transition"
-        style="border: 1.5px solid #44b4fb; color: #44b4fb;"
-        onmouseover="this.style.backgroundColor='#359ad6'; this.style.color='white';"
-        onmouseout="this.style.backgroundColor='transparent'; this.style.color='#44b4fb';"
+
+    <!-- Mobile menu button -->
+    <button 
+      class="md:hidden text-white text-3xl focus:outline-none" 
+      aria-label="Toggle menu"
+      onclick="document.getElementById('menu').classList.toggle('hidden')"
+    >
+      &#9776;
+    </button>
+
+    <!-- Menu -->
+    <div 
+      id="menu" 
+      class="hidden absolute top-full right-0 mt-2 w-full bg-gray-900 z-50 md:static md:flex md:w-auto md:mt-0 md:bg-transparent md:space-x-6 md:text-gray-300 md:items-center"
+    >
+      <a href="/apply" class="block px-4 py-2 hover:text-white border-b border-gray-700 md:border-none md:inline-block md:p-0">Become a Tutor</a>
+      <a 
+        href="#" 
+        class="block px-4 py-2 border border-[#44b4fb] rounded text-[#44b4fb] hover:bg-[#359ad6] hover:text-white md:inline-block"
         target="_blank" rel="noopener noreferrer"
-        aria-label="Get the app on the Apple Store">
+        aria-label="Get the app on the Apple Store"
+      >
         Get the App
       </a>
     </div>
   </nav>
 
   <!-- Hero Section -->
-  <section class="flex flex-col md:flex-row items-center justify-center px-10 py-20 max-w-6xl mx-auto">
+  <section class="flex flex-col md:flex-row items-center justify-center px-10 pt-5 pb-12 max-w-6xl mx-auto">
     <div class="md:w-1/2 flex justify-center mb-10 md:mb-0">
-      <div class="bg-black rounded-3xl w-72 h-[500px] flex items-center justify-center text-center">
-        <p class="text-gray-400">Video or screenshot<br />will display here</p>
+      <div class="relative w-[18rem] h-[560px] md:w-[23rem] md:h-[720px]">
+        <!-- iPhone frame -->
+        <img 
+          src="media/iphone.png" 
+          alt="iPhone Frame" 
+          class="absolute top-0 left-0 w-full h-full pointer-events-none select-none"
+        />
+
+        <!-- Video positioned inside the iPhone screen -->
+        <video 
+          class="absolute top-[7%] left-[6%] w-[88%] h-[89%] object-cover rounded-b-[20px] rounded-t-[5px]" 
+          autoplay 
+          muted 
+          loop 
+          playsinline
+        >
+          <source src="media/Acuitor demo.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
       </div>
     </div>
     <div class="md:w-1/2 text-center md:text-left md:pl-16">
-      <img src="img/Acuitor logo.png" alt="App Logo" class="w-16 h-16 mb-4 mx-auto md:mx-0" />
+      <img src="media/Acuitor logo.png" alt="App Logo" class="w-16 h-16 mb-4 mx-auto md:mx-0" />
       <h1 class="text-3xl font-bold mb-2">Acuitor</h1>
       <p class="text-gray-300 mb-6">
         Get help from a qualified tutor in seconds. No scheduling. No waiting.
