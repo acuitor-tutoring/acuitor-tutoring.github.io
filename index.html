@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Acuitor – Instant Tutoring</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    .text-custom-blue {
+      color: #44b4fb !important;
+    }
+    /* Custom hover bg for tutor button */
+    .btn-tutor {
+      background-color: #44b4fb;
+      transition: background-color 0.3s ease;
+    }
+    .btn-tutor:hover {
+      background-color: #44b4fb;
+    }
+    /* Card hover shadow */
+    .how-card:hover {
+      box-shadow: 0 10px 15px rgba(66, 153, 225, 0.4);
+      transform: translateY(-4px);
+      transition: all 0.3s ease;
+    }
+  </style>
+</head>
+<body class="bg-gray-900 text-white font-sans">
+
+  <!-- Navigation -->
+  <nav class="flex justify-between items-center px-8 py-4">
+    <a href="/" class="flex items-center space-x-2">
+      <img src="img/Acuitor logo.png" alt="App Logo" class="w-8 h-8" />
+      <span class="text-xl font-semibold">Acuitor</span>
+    </a>
+    <div class="space-x-6 text-gray-300 flex items-center">
+      <a href="/apply" class="hover:text-white">Become a Tutor</a>
+      <a href="#" 
+        class="ml-4 px-4 py-2 rounded transition"
+        style="border: 1.5px solid #44b4fb; color: #44b4fb;"
+        onmouseover="this.style.backgroundColor='#359ad6'; this.style.color='white';"
+        onmouseout="this.style.backgroundColor='transparent'; this.style.color='#44b4fb';"
+        target="_blank" rel="noopener noreferrer"
+        aria-label="Get the app on the Apple Store">
+        Get the App
+      </a>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="flex flex-col md:flex-row items-center justify-center px-10 py-20 max-w-6xl mx-auto">
+    <div class="md:w-1/2 flex justify-center mb-10 md:mb-0">
+      <div class="bg-black rounded-3xl w-72 h-[500px] flex items-center justify-center text-center">
+        <p class="text-gray-400">Video or screenshot<br />will display here</p>
+      </div>
+    </div>
+    <div class="md:w-1/2 text-center md:text-left md:pl-16">
+      <img src="img/Acuitor logo.png" alt="App Logo" class="w-16 h-16 mb-4 mx-auto md:mx-0" />
+      <h1 class="text-3xl font-bold mb-2">Acuitor</h1>
+      <p class="text-gray-300 mb-6">
+        Get help from a qualified tutor in seconds. No scheduling. No waiting.
+      </p>
+      <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Download on the App Store">
+        <img
+          src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg"
+          alt="Download on the App Store"
+          class="w-40 mx-auto md:mx-0"
+        />
+      </a>
+    </div>
+  </section>
+
+  <!-- How It Works Section -->
+  <section style="background-color:#f3f4f6;" class="text-gray-900 py-16 px-8">
+    <div class="max-w-5xl mx-auto text-center">
+      <h2 class="text-3xl font-bold mb-10">How It Works</h2>
+      <div class="grid md:grid-cols-3 gap-10 text-left">
+        <div class="bg-white p-6 rounded-xl shadow-md how-card">
+          <div class="mb-4" style="color: #44b4fb;">
+            <!-- user group icon -->
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 mx-auto" fill="none" viewBox="0 0 24 24" stroke="#44b4fb" stroke-width="2" >
+              <path stroke-linecap="round" stroke-linejoin="round" d="M17 20h5v-2a4 4 0 00-3-3.87M9 20H4v-2a4 4 0 013-3.87M12 12a5 5 0 100-10 5 5 0 000 10z" />
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold mb-2">1. Request a Session</h3>
+          <p>Select a subject and tell us what you need help with. Choose among our active qualified tutors.</p>
+        </div>
+        <div class="bg-white p-6 rounded-xl shadow-md how-card">
+          <div class="mb-4" style="color: #44b4fb;">
+            <!-- credit card icon -->
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 mx-auto" fill="none" viewBox="0 0 24 24" stroke="#44b4fb" stroke-width="2" >
+              <rect width="20" height="12" x="2" y="7" rx="2" ry="2" />
+              <path stroke-linecap="round" stroke-linejoin="round" d="M2 11h20" />
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold mb-2">2. Pay & Connect</h3>
+          <p>Securely pay and join a Google Meet instantly with your selected tutor.</p>
+        </div>
+        <div class="bg-white p-6 rounded-xl shadow-md how-card">
+        <div class="mb-4" style="color: #44b4fb;">
+          <!-- computer icon -->
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 mx-auto" fill="none" viewBox="0 0 24 24" stroke="#44b4fb" stroke-width="2">
+            <rect x="3" y="4" width="18" height="12" rx="2" ry="2" />
+            <path stroke-linecap="round" stroke-linejoin="round" d="M8 20h8M12 16v4" />
+          </svg>
+        </div>
+        <h3 class="text-xl font-semibold mb-2">3. Start Learning</h3>
+        <p>Get live one-on-one help for as long as you paid. No scheduling, no waiting.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Become a Tutor Section -->
+  <section class="bg-gray-900 text-white py-16 px-8">
+    <div class="max-w-5xl mx-auto text-center">
+      <h2 class="text-3xl font-bold mb-6">Why Become a Tutor with Acuitor?</h2>
+      <p class="mb-8 max-w-2xl mx-auto">
+        At Acuitor, you’re in control. Set your own pay, choose when you’re available, and go online whenever you want—no commitments or fixed schedules. Help students instantly and get paid for sharing your expertise on your own terms.
+      </p>
+      <a href="/apply" class="btn-tutor inline-block px-6 py-3 rounded-lg text-lg font-semibold text-white" style="background-color: #44b4fb;">
+        Apply to Be a Tutor
+      </a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-gray-400 text-sm py-6">
+    <div class="max-w-5xl mx-auto flex flex-col md:flex-row justify-between items-center px-6">
+      <p class="mb-4 md:mb-0">&copy; 2025 Acuitor. All rights reserved.</p>
+      <div class="space-x-6">
+        <a href="/privacy" target="_blank" rel="noopener noreferrer" class="hover:text-white">Privacy Policy</a>
+        <a href="/terms" target="_blank" rel="noopener noreferrer" class="hover:text-white">Terms of Service</a>
+        <a href="/refund" target="_blank" rel="noopener noreferrer" class="hover:text-white">Refund Policy</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
